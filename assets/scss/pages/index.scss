@@ -383,8 +383,8 @@ TAB SECTION STYLE
         .grid-sizer,
         .grid-item {
             width: 100%;
-            margin-bottom: 1rem;
-            padding: 1rem 0rem;
+            margin-bottom: 0rem;
+            padding: 1rem 0;
             position: relative;
             overflow: hidden;
 
@@ -417,7 +417,6 @@ TAB SECTION STYLE
                 opacity: 0;
             }
 
-
             &:hover {
                 transition: .3s all ease;
 
@@ -432,19 +431,18 @@ TAB SECTION STYLE
                     opacity: 1;
                 }
             }
-
         }
 
         @include media-breakpoint-up(sm) {
-
             .grid-sizer,
             .grid-item {
                 width: 50%;
+                padding: 0rem 1rem;
+                margin-bottom: 2rem;
             }
         }
 
         @include media-breakpoint-up(md) {
-
             .grid-sizer,
             .grid-item {
                 width: 33.3%;
